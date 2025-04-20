@@ -1,0 +1,60 @@
+# Define functions for basic arithmetic operations
+def add(x, y): 
+    """Returns the sum of x and y."""  # Function docstring (PEP 257 standard)
+    return x + y 
+
+def subtract(x, y): 
+    """Returns the difference of x and y."""
+    return x - y 
+
+def multiply(x, y): 
+    """Returns the product of x and y."""
+    return x * y 
+
+def divide(x, y): 
+    """Returns the quotient of x and y. Handles division by zero."""
+    if y == 0:  # Prevent division by zero error
+        return "Error! Division by zero."
+    return x / y 
+
+# Display available operations to the user
+print("Select operation:")  
+print("1. Add")  
+print("2. Subtract")  
+print("3. Multiply")  
+print("4. Divide")  
+
+# Loop to allow multiple calculations
+while True:  
+    # Get user input for operation choice
+    choice = input("Enter choice (1/2/3/4): ")  
+    
+    # Check if the user input is valid (should be one of '1', '2', '3', '4')
+    if choice in ('1', '2', '3', '4'):  
+        try:
+            # Get user inputs as floating-point numbers
+            num1 = float(input("Enter first number: "))  
+            num2 = float(input("Enter second number: "))  
+
+            # Perform the selected operation and display the result
+            if choice == '1':  
+                print(f"{num1} + {num2} = {add(num1, num2)}")  # f-string formatting (PEP 498)
+            elif choice == '2':  
+                print(f"{num1} - {num2} = {subtract(num1, num2)}")  
+            elif choice == '3':  
+                print(f"{num1} * {num2} = {multiply(num1, num2)}")  
+            elif choice == '4':  
+                print(f"{num1} / {num2} = {divide(num1, num2)}")  
+
+        except ValueError:  # Handle cases where user inputs non-numeric values
+            print("Invalid input! Please enter numeric values.")  
+            continue  # Restart loop if input is invalid
+
+        # Ask the user if they want to perform another calculation
+        next_calculation = input("Let's do another calculation? (yes/no): ").strip().lower()  
+        
+        if next_calculation == "no":  
+            print("Exiting the calculator. Goodbye!")  
+            break  # Exit the loop and end the program
+    else:  
+        print("Invalid Input! Please enter a valid choice.")  
