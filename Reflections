@@ -1,0 +1,68 @@
+#Reflectiions
+Reflections
+Completing this module has given me valuable insights into Object-Oriented Programming (OOP) and its practical applications in designing complex systems. Before this course, I had little to no conceptual understanding of OOP principles such as encapsulation, inheritance, polymorphism, and abstraction and coding in general.  However, working on the personal robot system significantly deepened that understanding by requiring me to apply these principles in an integrated, real-world project. I want to continue this practice to further my experience and knowledge.
+The development of the robot system demanded a structured and modular approach, which OOP naturally facilitates. By defining clear class structures—for example, separate classes for the robot's sensors, actuators, environment models, and communication interfaces—I learned how to break down a system into manageable components. This made the code more readable, maintainable, and easier to write, debug and test individual modules. Python, the primary implementation language, allowed for rapid iteration and experimentation while staying focused on good design practices.
+Working on UML diagrams was one of the module's most challenging yet rewarding parts. I first experienced the limitations of having different systems with each UML. However, as I made more UML diagrams, the concept of the system I wanted to create became clearer. The Class diagram was the UML, making writing the code and tests easier. Creating class diagrams helped solidify my understanding of the relationships between objects and made me more conscious of responsibilities and dependencies within the system. Activity and sequence diagrams were particularly useful in visualising the flow of data and control through the robot's processes, enhancing my ability to reason complex interactions such as task execution or sensor feedback loops. Meanwhile, the state transition diagrams clarified how the robot should respond to different environmental triggers, reinforcing my appreciation for finite state machines in robotics.
+From a personal and professional development perspective, this module has been transformative. Personally, I gained confidence in my ability to design and implement complex systems from scratch. I became more comfortable with planning before coding and developed a mindset that values clarity and reusability over quick fixes. Another example that required planning was thinking about the data structures that had to be incorporated These lessons extend beyond programming—they apply to problem solving and communication in general.
+Professionally, I now feel more prepared to contribute to projects involving software architecture, system design, or robotics. The combination of diagramming and code implementation mimicked real-world workflows in tech environments, and I now understand how vital design documentation is in bridging the gap between concept and implementation. This experience has also highlighted the importance of teamwork and clear communication, as systems of this complexity are rarely built in isolation.
+In summary, this module was more than a technical exercise—it was a stepping stone toward becoming a thoughtful and capable software engineer. The hands-on practice with OOP, supported by rigorous design thinking through UML, has laid a solid foundation for future work in intelligent systems and beyond.
+Throughout this module, I experienced a wide range of emotions — from excitement at engaging with Object-Oriented Programming (OOP) and UML modelling, to moments of frustration when debugging complex code or aligning with team members during group work. Initially, I felt overwhelmed, especially when balancing theoretical concepts with practical applications like designing the robot system. However, over time, this emotional discomfort evolved into curiosity and determination.
+These emotions played a significant role in how I approached my work. For example, the initial frustration pushed me to adopt better planning strategies and more frequent code reviews, improving my confidence and outcomes. I also began to appreciate the value of peer feedback, as I was initially confused and unsure of where to start. By reflecting on others’ perspectives and integrating relevant academic literature, e.g., Zagorulko et al., 2021, on design pattern selection, I have realised that programming is more of a collaborative, evolving process than a solitary task.
+I have minimal experience with OOP and have only recently started, which has added to my feeling of overwhelm. However, successfully writing the code and getting feedback has increased my confidence. I am also learning that there is no single right way to code. As mentioned earlier, I need to have my plan, strategy, and reasoning to go forward.
+This module fundamentally reshaped the way I learn and apply programming concepts. Initially, I approached tasks in a very code-first, trial-and-error manner. However, after engaging with UML diagrams- especially class and sequence diagrams, I began to recognise the power of planning and visualisation. Also, the introduction to data structures has changed how I approach and think of coding. I never assumed that data structure was relevant, important or needed, and this has enhanced my learning and transitioned me from a stance of being reactive to being more proactive; I now see the importance of beginning a project with a clear structure in mind, identifying object relationships and behaviour flow before writing any code.
+One key change was how I view system design. I no longer see classes as containers for methods, but as part of a larger, interacting architecture. This systems thinking approach has already impacted how I plan other projects, including those outside programming.
+My learning can be evidenced through several components:
+•	The development of a robot system in Python using OOP principles
+•	The creation of UML diagrams using tools such as Lucid chart, excalidraw
+•	A design pattern recommender program using constructor-based object initialisation
+I also improved soft skills such as problem-solving, critical analysis, self-directed learning and research. These skills are transferable to industry roles, particularly in software development and systems engineering.
+Individually, I contributed the initial UML diagrams and the Python base architecture for the robot project. I also took responsibility for integrating user input functions and writing a reusable module for the design pattern recommender. During team discussions, I actively engaged in collaborative debugging and reviewed teammates’ code for consistency and documentation.
+To evidence my participation, I have included screenshots from my e-portfolio showing my Git contributions, class diagram iterations, and internal notes on architectural decisions (see github link). These demonstrate both the technical and reflective nature of my involvement.
+I have cited relevant literature throughout this reflection, particularly where it influenced design decisions. For instance, the work of Y. A. Zagorulko et al. (2021) was crucial in shaping my understanding of how design patterns can intelligently match user requirements. All references are correctly cited in APA format, and I have ensured this submission maintains the standards of academic integrity expected at this level.
+I found the use of the PEP8 guide very useful and comforting. I had always wondered what guided most developers’ comments because I had always heard developers make comments without providing logic or patterns. However, having a guide to follow makes it easier for me to consolidate my learning.
+
+
+
+
+
+
+
+OOP: Object-oriented programming
+Object-oriented programming (OOP) is one of the most famous and widely used programming paradigms, and it offers many benefits. More importantly, despite its popularity, it also has limitations compared to other paradigms such as procedural, functional, and logic programming. Below, I will focus on the critique, evaluation, and appraisal of OOP.
+OOP is centred around the concept of an object, representing data bundles and methods operating on that data. The principles of OOP include:
+•	Encapsulation: Bundling data and the methods that manipulate it within objects.
+•	Abstraction: Hiding internal complexities and exposing only essential features.
+•	Inheritance: Where new classes can be reused and extended from existing ones.
+•	Polymorphism: Enabling a standard interface for different underlying forms (data type
+Advantages and Strengths of OOP
+1.	Modularity and Code Reusability: OOP encourages modular code through classes and objects, making it easier to maintain and reuse. Inheritance facilitates the reuse of common logic, reducing redundancy.
+2.	Encapsulation Improves Security and Maintenance: By hiding internal object details, OOP prevents unintended interference, reduces bugs, and makes maintenance easier.
+3.	Natural Mapping to Real-World Concepts: Objects in OOP can represent real-world entities, making systems more intuitive to design and understand.
+4.	Scalability and Team Collaboration: Large projects benefit from OOP's modular structure, allowing teams to work on separate classes or modules simultaneously with minimal conflicts.
+5.	Polymorphism Enhances Flexibility: OOP systems can be extended or modified with minimal impact on existing code through interfaces or method overriding
+Disadvantages and Limitations of OOP
+1.	Complexity: OOP can become complex quickly and lead to over-engineering, especially in simple programs. Abstraction layers and deep inheritance hierarchies may make code harder to follow.
+2.	Tight Coupling: Despite encapsulation, poorly designed OOP systems often result in tightly coupled components, reducing flexibility and hindering testing.
+3.	Performance Considerations: In some contexts, OOP can be less performant than procedural or functional approaches to object creation.
+4.	Misuse of Inheritance: Inappropriate use of inheritance rather than composition can lead to fragile hierarchies and hard-to-maintain code (the “fragile base class” problem).
+Comparison with Other Programming Paradigms
+•	Procedural Programming (e.g., C#)
+o	Pros: Simpler, faster for small-scale tasks, more transparent execution flow.
+o	Cons: Less modular, more complicated to maintain and scale.
+o	Comparison: OOP provides better structure and abstraction, especially in large projects.
+•	Functional Programming (e.g., Haskell, modern JavaScript)
+o	Pros: Emphasises immutability, pure functions, and declarative code. Encourages fewer side effects and more straightforward reasoning.
+o	Cons: Steeper learning curve, sometimes less intuitive for modelling stateful systems.
+o	Comparison: Functional Programming can lead to more predictable and testable code; however, OOP is often more aligned with real-world modelling.
+•	Logic Programming (e.g., Prolog)
+o	Pros: Ideal for AI, rule-based, or constraint-solving problems.
+o	Cons: Less intuitive for general-purpose software development.
+o	Comparison: OOP offers broader applicability and developer familiarity, while logic programming is more specialised.
+In conclusion, the choice of programming language is based on needs, resources and use.
+
+
+
+Appendix
+Github
+
+https://github.com/QuintessentialLady/python_class_example/tree/main
