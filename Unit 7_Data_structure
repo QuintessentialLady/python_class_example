@@ -1,0 +1,89 @@
+#List
+class Garage:
+    def __init__(self):
+        self.cars = []  # list of Car objects
+
+    def add_car(self, car):
+        self.cars.append(car)
+
+#Dictionaries
+class Car:
+    def __init__(self, specs):
+        self.specs = specs
+#sets
+class Registry:
+    def __init__(self):
+        self.plates = set()
+
+    def register_plate(self, plate):
+        if plate not in self.plates:
+            self.plates.add(plate)
+#car class example
+class Car:
+    def __init__(self):
+        self.cars_data = {
+            "Tesla Model S": {
+                "year": 2020,
+                "range": "370 miles",
+                "type": "Electric"
+            },
+            "Toyota Corolla": {
+                "year": 2019,
+                "range": "400 miles",
+                "type": "Petrol"
+            },
+            "Ford F-150": {
+                "year": 2022,
+                "range": "300 miles",
+                "type": "Diesel"
+            }
+        }
+
+    def show_items(self):
+        print("Items:\n", self.cars_data.items())
+
+    def show_keys(self):
+        print("Keys:\n", self.cars_data.keys())
+
+    def show_values(self):
+        print("Values:\n", self.cars_data.values())
+
+
+# Example usage:
+car_inventory = Car()
+car_inventory.show_items()
+car_inventory.show_keys()
+car_inventory.show_values()
+
+#Design 
+class DesignPatternRecommender:
+    def __init__(self, purpose, flexibility, complexity):
+        self.purpose = purpose
+        self.flexibility = flexibility
+        self.complexity = complexity
+
+    def recommend(self):
+        if self.purpose == "creation" and self.flexibility == "high":
+            return "Use the Factory or Abstract Factory Pattern."
+        elif self.purpose == "structure" and self.complexity == "low":
+            return "Use the Adapter or Facade Pattern."
+        elif self.purpose == "behavior" and self.flexibility == "low":
+            return "Use the Command or Observer Pattern."
+        else:
+            return "Consider the Strategy or Composite Pattern."
+
+
+# Example usage:
+def main():
+    print("Design Pattern Recommender")
+    purpose = input("Enter the purpose (creation/structure/behavior): ").strip().lower()
+    flexibility = input("Enter flexibility (low/medium/high): ").strip().lower()
+    complexity = input("Enter complexity (low/medium/high): ").strip().lower()
+
+    recommender = DesignPatternRecommender(purpose, flexibility, complexity)
+    result = recommender.recommend()
+    print("Recommended Pattern(s):", result)
+
+
+main()
+
